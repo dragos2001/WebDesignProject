@@ -15,17 +15,42 @@
   font-weight: 500;
   color: #edf0f1;
   text-decoration: none;
+  font-size: large;
 }
 
 header {
     display: flex;
+    height:2cm;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding:0px 5%;
     background-color: #24252a;
   }
 
-  .logo {
+  .logo img {
     cursor: pointer;
+    padding:7px;
+    
+  }
+
+
+  .nav{
+    display: flex;
+    list-style: none;
+   
+  }
+  
+  .nav li {
+  
+    padding: 0px 20px;
+  }
+  
+  .nav li a {
+    transition: all 0.3s ease 0s;
+  }
+
+
+  .nav li a :hover{
+    color:aqua;
   }
 
