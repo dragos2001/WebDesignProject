@@ -30,7 +30,8 @@ header {
   .logo img {
     cursor: pointer;
     padding:7px;
-    
+    height:15%;
+    width:15%;
   }
 
 
