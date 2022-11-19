@@ -1,0 +1,13 @@
+p{
+    line-height: 25px;
+}
+
+.article_img{
+ float:left;  
+ clear:left;
+ max-width: 70%;    
+}
+.article_img:nth-of-type(2n){
+  float:right; 
+  clear:right;
+}
