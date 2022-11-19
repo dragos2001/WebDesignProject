@@ -2,7 +2,7 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 90%;
+  max-width: 65vw;
   position: relative;
   margin: auto;
 }
@@ -10,7 +10,7 @@
 /* Hide the images by default */
 .mySlides {
   display: none;
-  object-fit: contain;
+  max-width: 100%;
 }
 
 /* Next & previous buttons */
@@ -45,9 +45,12 @@
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+  font-weight: bold;
+  bottom: 3em;
+  width: 20%;
+  position: relative;
+  margin: 0 auto;
+  background: rgba(111, 130, 166, 0.3);
   text-align: center;
 }
 
@@ -58,6 +61,7 @@
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  background: rgba(111, 130, 166, 0.3);
 }
 
 /* The dots/bullets/indicators */
