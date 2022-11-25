@@ -2,6 +2,44 @@ p{
     line-height: 25px;
 }
 
+.container{
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 20px;
+}
+
+.container:nth-of-type(even){
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  margin: 20px 20px;
+}
+
+.article_img{
+  width: 60vw;
+}
+
+.article_text{
+  padding: 10px 20px;
+  line-height: 1.5;
+  font-size: x-large;
+}
+
+.heading{
+  font-size: large;
+  padding: 0px 10px;
+  margin: 10px 0px;
+}
+
+.links{
+  color: blue;
+}
+
+links:visited {
+  color: purple;
+}
+
+/*
 div:nth-of-type(odd) .article_img{
  display: inline-block;
  object-fit: cover;
@@ -31,3 +69,4 @@ div:nth-of-type(even) .article_img{
   font-size: 20px;
   max-width: 45%;
 }
+*/
