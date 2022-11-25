@@ -1,14 +1,14 @@
 .container{
   display: flex;
   align-items: flex-start;
-  margin: 20px 20px;
+  padding: 40px 20px;
 }
 
 .container:nth-of-type(even){
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
-  margin: 20px 20px;
+  padding: 35px 20px;
 }
 
 .article_img{
