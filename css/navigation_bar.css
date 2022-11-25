@@ -21,37 +21,52 @@
 header {
     display: flex;
     height:2cm;
-    justify-content: space-between;
+   justify-content: space-between;
     align-items: center;
-    padding:0px 5%;
     background-color: #24252a;
   }
 
-  .logo img {
+
+  .logo {
+    display:flex;
     cursor: pointer;
     padding:7px;
-    height:15%;
-    width:15%;
+    justify-content: flex-start;
+    max-height: 100%;
+    
+
   }
 
+  
+  .logo img {
 
-  .nav{
+    max-width: 30%;
+    
+
+  }
+  
+
+
+
+  .navi{
+    
     display: flex;
+    justify-content: flex-end;
     list-style: none;
    
   }
   
-  .nav li {
+  .navi li {
   
     padding: 0px 20px;
   }
   
-  .nav li a {
+  .navi li a {
     transition: all 0.3s ease 0s;
   }
 
 
-  .nav li a :hover{
+  .navi li a :hover{
     color:aqua;
   }
 
