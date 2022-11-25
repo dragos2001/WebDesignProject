@@ -1,0 +1,133 @@
+// Copyright notice and link
+// The short URL is based on Regex redirections by language, they are setup in the Redirect plugin.
+document.addEventListener('copy', (event) => {
+  const pagelink = pastemsg;
+  event.clipboardData.setData('text', document.getSelection() + pagelink);
+  event.preventDefault();
+});
+	
+jQuery(document).ready(function(){
+
+//	// Exit popup
+//    function setCookie(name,value,days) {
+//        var expires = "";
+//        if (days) {
+//            var date = new Date();
+//            date.setTime(date.getTime() + (days*24*60*60*1000));
+//            expires = "; expires=" + date.toUTCString();
+//        }
+//        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+//    }
+//    function getCookie(name) {
+//        var nameEQ = name + "=";
+//        var ca = document.cookie.split(';');
+//        for(var i=0;i < ca.length;i++) {
+//            var c = ca[i];
+//            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+//            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+//        }
+//        return null;
+//    }
+//    function eraseCookie(name) {   
+//        document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+//    }
+//    jQuery("body").bind("mouseenter",function(){
+//    }).bind("mouseleave",function(){
+//		var cookie = getCookie("exitpopup")
+//        if(cookie== null) {
+//            console.log('popup');
+//            jQuery('#exit-popup').show();
+//			
+//            /* set cookie so this does not repeat */   
+//            setCookie('exitpopup','true',1);
+//        }
+//    });
+//	// Close modal
+//    jQuery(".js-close-modal").click(function(){
+//      	jQuery("#exit-popup").hide();
+//    });
+//
+//    jQuery(document).click(function(event) {
+//      	//if you click on anything except the modal itself or the "open modal" link, close the modal
+//      	if (!jQuery(event.target).closest("#exit-popup.content").length) {
+//        	jQuery("body").find("#exit-popup").hide();
+//			setCookie('exitpopup','true',1);
+//      	}
+//    });
+	
+	
+	// Inverse navigation for single projects
+	jQuery('.light .header #aqso-logo g').css({ fill: 'white', transition: 'fill 0.3s ease' });
+	jQuery('.light .subtitle, .light .title, .light .pretitle, .light .root').css({ color: 'white', transition: 'color 0.3s ease'});
+	jQuery('.light #site-header').css({ background: '-webkit-linear-gradient(top, #2f272747, rgba(0, 0, 0, 0)) !important'});
+	
+	// Fade out 
+	jQuery('a:not(#go-to-top, .jv-excluded)').click(function(e){
+		if((jQuery(this).attr("target") != "_blank") || (!e.ctrlKey) || (e.keyCode != 91)){ // ignore if link opens in new tab
+			event.preventDefault();
+			var linkLocation = this.href;
+			var hash = linkLocation.split("#")[1];
+			var uri = linkLocation.split("#")[0];
+			jQuery('html,body').animate({ scrollTop: 0 }, 'slow');
+			//Restore inverse navigation for single projects
+			jQuery('.light .header #aqso-logo g').css({ fill: 'black', transition: 'fill 0.3s ease' });
+			jQuery('.light .subtitle, .light .title, .light .pretitle, .light .root').removeAttr( 'style' );
+			// Fade out page
+			jQuery('#loading').animate({"opacity": "0.01"}, 300).queue(function(){
+				if (typeof hash !== 'undefined'){
+					window.location = uri+campaing+'#'+hash;
+				} else {
+					window.location = uri+campaing;
+				}
+			});
+			// default
+			if (typeof hash !== 'undefined'){
+                window.location = uri+campaing+'#'+hash;
+            } else {
+                window.location = uri+campaing;
+            }
+		}
+	});
+});
+
+jQuery('a[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+	var target = jQuery(this.hash);
+	target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
+	if (target.length) {
+		jQuery('html, body').animate({
+			scrollTop: target.offset().top
+		}, 1000);
+		return false;
+	}
+  }
+});
+	
+// AOS animation script
+AOS.init({
+	duration: 1200,
+	easing: 'ease-out',
+	anchorPlacement: 'top-bottom',
+})
+
+// scroll to input 
+jQuery(':input').on('focus', function() {
+   document.body.scrollTop += this.getBoundingClientRect().top - 10
+});
+
+// Scroll to top
+jQuery('#go-to-top').each(function(){
+    jQuery(this).click(function(){ 
+        jQuery('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false; 
+    });
+});
+
+// Stuck on top ribbon
+jQuery(function() {
+	jQuery(window).scroll(function() {
+		jQuery(".stuckOnTopContents").toggleClass("downItGoes", jQuery(window).scrollTop() > 300);
+	});
+});
+
+
