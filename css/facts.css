@@ -38,35 +38,3 @@ p{
 links:visited {
   color: purple;
 }
-
-/*
-div:nth-of-type(odd) .article_img{
- display: inline-block;
- object-fit: cover;
- float:right;  
- clear:right;
- max-width: 55%;    
-}
-div:nth-of-type(even) .article_img{
-  display: inline-block;
-  object-fit:scale-down;
-  float:left; 
-  clear:left;
-  max-width: 55%;
-}
-
-.article_content{
-  padding: 20px;
-  height: 70vh;
-  clear: both;
-}
-
-.article_text{
-  display: inline-block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0 20px 0 20px;;
-  font-size: 20px;
-  max-width: 45%;
-}
-*/
