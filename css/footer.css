@@ -1,6 +1,6 @@
-footer{
-    position: relative;
-    top: 2cm;
+.footer_wrapper{
+  position: relative;
+  top: 2cm;
 }
 
 /* Style all font awesome icons */

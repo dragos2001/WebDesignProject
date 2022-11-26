@@ -1,6 +1,6 @@
 document.write('<link rel="stylesheet" href="css/footer.css">\
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\
-<footer>\
+<footer class="footer_wrapper">\
     <hr>\
     <div class="footer_container"> \
         <a href="https://www.fit.vut.cz/" target="_blank"><img src="Images/VUT-FIT_logo.svg"></a>\
