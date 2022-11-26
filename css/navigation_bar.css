@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
-* {
-    box-sizing:border-box;
-    margin: 0;
-    padding: 0;
-   
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
 }
 
+.mymenu{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
 
-
-
- li, a {
+ .navi_link {
   font-family: "Lora", sans-serif;
   font-weight: 500;
   color: #edf0f1;
@@ -18,55 +20,40 @@
   font-size: large;
 }
 
-header {
-    display: flex;
-    height:2cm;
-   justify-content: space-between;
-    align-items: center;
-    background-color: #24252a;
-  }
+header{
+  display: flex;
+  height:2cm;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #24252a;
+}
 
+.logo{
+  display:flex;
+  cursor: pointer;
+  padding:7px;
+  justify-content: flex-start;
+  max-height: 100%;
+}
 
-  .logo {
-    display:flex;
-    cursor: pointer;
-    padding:7px;
-    justify-content: flex-start;
-    max-height: 100%;
-    
+.logo img{
+  max-width: 30%;
+}
 
-  }
-
+.navi{
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
   
-  .logo img {
-
-    max-width: 30%;
-    
-
-  }
+.navi li{
+  padding: 0px 20px;
+}
   
+.navi li a{
+  transition: all 0.3s ease 0s;
+}
 
-
-
-  .navi{
-    
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-   
-  }
-  
-  .navi li {
-  
-    padding: 0px 20px;
-  }
-  
-  .navi li a {
-    transition: all 0.3s ease 0s;
-  }
-
-
-  .navi li a :hover{
-    color:aqua;
-  }
-
+.navi_link:hover{
+  color:aqua;
+}
