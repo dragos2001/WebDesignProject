@@ -58,6 +58,9 @@ p {
   transition: 0.5s;
 }
 
+.section-heading{
+  padding-top: 2cm;
+}
 
 @media screen and (min-width: 768px) {
   section {
