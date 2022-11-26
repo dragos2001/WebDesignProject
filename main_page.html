@@ -4,11 +4,8 @@
 <head>
   <title>Cluj Napoca Presentation</title>
   <link rel="icon" href="Images\logo.svg"/>
-  <script src="javascriptcode\main_page_image_slider.js"></script>
   <link rel="stylesheet" href="css\slideshow_container.css">
   <link rel="stylesheet" href="css\facts.css">
-  <link rel="stylesheet" href="css\footer.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -55,8 +52,6 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
 
-  <!-- Load Slideshow -->
-  <script>showSlides(1);</script>
    
   <!-- The dots/circles -->
   <div style="text-align:center">
@@ -67,58 +62,52 @@
       <span class="dot" onclick="currentSlide(5)"></span>
   </div>
 
+  <!-- Load Slideshow -->
+  <script src="javascriptcode\main_page_image_slider.js"></script>
+
   <!-- Facts Section -->
   <section id="Facts">
     <h3 class="heading">General Information and facts about Cluj Napoca</h3>
     
-    <div class="article_content container">
-    <img class="article_img item" src="Images\Map.jpg">
-    <span class="article_text item">
+    <div class="article_content article_container">
+    <img class="article_img article_item" src="Images\Map.jpg">
+    <span class="article_text article_item">
     <h4> Getting to Cluj</h4>
     •	Cluj-Napoca, or simply Cluj, is the fourth-most populous city in Romania (pop: 324.576 as of 2011) located in the Someșul Mic river valley and it is considered the unofficial capital of the historical province of Transylvania. It is roughly equidistant from Bucharest (445 kilometres (277 miles)), Budapest (461 km (286 mi)) and Belgrade (483 km (300 mi)).
-    <a href="" class="links">More</a>
+    <a href="html_sections/Services.html" class="links">More</a>
     </span>
     </div>
    
-    <div class="article_content container">
-    <img class="article_img item" src="Images\Klausenburg.jpg">
-    <span class="article_text item">
+    <div class="article_content article_container">
+    <img class="article_img article_item" src="Images\Klausenburg.jpg">
+    <span class="article_text article_item">
     <h4> History</h4>
     •	If you take a look at the town signs when entering the city, three names will be revealed: Cluj, Kolozsvár, and Klausenburg. Kolozsvár is the Hungarian version, while Klausenburg is the German variant of Cluj, which before 1918 was a part of the Hungarian Kingdom and later, the Austro-Hungarian empire.
-    <a href="" class="links">More</a>
+    <a href="html_sections/History.html" class="links">More</a>
     </span>
     </div>
 
-    <div class="article_content container">
-    <img class="article_img item" src="Images\Student-City.jpg">
-    <span class="article_text item">
+    <div class="article_content article_container">
+    <img class="article_img article_item" src="Images\Student-City.jpg">
+    <span class="article_text article_item">
     <h4> Events around the city</h4>
     •	Students are an important part of the city. Cluj is the second university centre in the country hosting about 80.000 students each year, nearly a third of its population. Having a street full of bars where young people can have a drink for far less than a  in the city center, it is no wonder why the city was named the ‘European Youth Capital’ for the year 2015.
-    <a href="" class="links">More</a>
+    <a href="html_sections/Events.html" class="links">More</a>
     </span> 
     </div>
 
-    <div class="article_content container">
-    <img class="article_img item" src="Images\Hoia-Baciu.jpg">
-    <span class="article_text item">
+    <div class="article_content article_container">
+    <img class="article_img article_item" src="Images\Hoia-Baciu.jpg">
+    <span class="article_text article_item">
     <h4> Small excursions</h4>
     •	The Hoia-Baciu Forest in Cluj Napoca ranks as one of the most paranormal areas on the planet and is a hot spot for ghostly appearances and UFO sightings. There are lots of legends and stories about this forest; If you feel like having an adventurous time, this place is for you. It is less than an hour away from the city center.
-    <a href="" class="links">More</a>
+    <a href="html_sections/Outdooractivities.html" class="links">More</a>
     </span>
     </div>
 
   </section>
 
   <!-- Footer -->  
-  <footer>
-
-    <!-- Draw a line to divide stuff-->
-    <hr>
-    <img src="Images\VUT-FIT_logo.svg">
-    
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-instagram"></a>
-
-  </footer>
+  <script src="footer.js"></script>
 </body>
 </html>

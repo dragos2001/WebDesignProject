@@ -8,25 +8,51 @@ footer{
     padding: 20px;
     font-size: 30px;
     width: 50px;
+    height: 55px;
     text-align: center;
     text-decoration: none;
   }
   
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  /* Twitter */
-  .fa-instagram{
-  background: #8a3ab9;
-  color: #F77737;
-  }
+.footer_container{
+  display: flex;
+  align-items: center;
+}
+
+.fb{
+  margin-left: auto;
+}
+
+.footer_container:last-child{
+  margin-right: 20px;
+}
+
+.credits{
+  font-size: small;
+  position: relative;
+  bottom: -20px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-instagram{
+background: #8a3ab9;
+color: #F77737;
+}
+
+/* Globe icon */
+.fa-globe{
+  background: rgba(102, 29, 19, 1);
+  color: rgba(247, 247, 242, 1);
+}

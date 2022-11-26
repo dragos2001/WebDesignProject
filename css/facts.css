@@ -1,10 +1,10 @@
-.container{
+.article_container{
   display: flex;
   align-items: flex-start;
   padding: 40px 20px;
 }
 
-.container:nth-of-type(even){
+.article_container:nth-of-type(even){
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;

@@ -12,7 +12,7 @@
   z-index: 1;
 }
 
- li, a {
+ .navi_link {
   font-family: "Lora", sans-serif;
   font-weight: 500;
   color: #edf0f1;
@@ -20,7 +20,7 @@
   font-size: large;
 }
 
-header {
+header{
   display: flex;
   height:2cm;
   justify-content: space-between;
@@ -28,7 +28,7 @@ header {
   background-color: #24252a;
 }
 
-.logo {
+.logo{
   display:flex;
   cursor: pointer;
   padding:7px;
@@ -36,7 +36,7 @@ header {
   max-height: 100%;
 }
 
-.logo img {
+.logo img{
   max-width: 30%;
 }
 
@@ -46,14 +46,14 @@ header {
   list-style: none;
 }
   
-.navi li {
+.navi li{
   padding: 0px 20px;
 }
   
-.navi li a {
+.navi li a{
   transition: all 0.3s ease 0s;
 }
 
-.navi li a :hover{
+.navi_link:hover{
   color:aqua;
 }
