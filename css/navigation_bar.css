@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
-*{
-  box-sizing:border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body{
-  background: linear-gradient(135deg, rgba(227, 151, 141,0.4), rgba(224, 217, 154,0.8));
-}
-
 .heading{
   font-size: x-large;
 }

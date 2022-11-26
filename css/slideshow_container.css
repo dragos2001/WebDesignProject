@@ -1,11 +1,8 @@
-* {box-sizing:border-box}
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 65vw;
   margin: auto;
 }
-
 
 /* Hide the images by default */
 .mySlides {
@@ -41,7 +38,7 @@
 }
 
 /* Caption text */
-.text {
+.caption_text{
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
