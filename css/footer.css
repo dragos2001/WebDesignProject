@@ -34,7 +34,8 @@
   width: 20%;
   position: relative;
   bottom: -20px;
-  color: rgba(228, 233, 216, 0.6);
+  color:rgba(237, 240, 241, 0.6);
+  /* rgba(228, 233, 216, 0.6);*/
 }
 
 /* Add a hover effect if you want */
