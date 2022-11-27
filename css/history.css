@@ -1,0 +1,112 @@
+#history_bg{
+    position: relative;
+    top: 2cm;
+    background-image: url("../Images/History.jpg");
+    background-size:100% 100%;
+    width: auto;
+    height: 100vh;
+}
+
+#hist_intro{
+    position: relative;
+    top: 2cm;
+    width: 90%;
+    margin: 1.5em;
+    line-height: 1.5;
+}
+
+
+/*
+ CSS for the main interaction
+*/
+
+.tabset .tab-panel {
+    display: none;
+}   
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+    display: block;
+}
+
+.tabset > input[type="radio"] {
+    display: none;
+    position: relative;
+    margin: auto;
+}
+  
+/*
+Styling
+*/
+.tabset{
+    position: relative;
+    top: 2cm;
+    background-color: #9fb2d1;
+    padding: 3%;
+}
+
+.tab-panel {
+    padding: 30px 0;
+    width: 90%;
+    margin: auto;
+    line-height: 1.5;
+}
+
+input[type=radio] +label{
+    position: relative;
+    margin: auto;
+    
+}
+.tab-panels{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.tabset > label {
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px 25px;
+    border: 1px solid transparent;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: 300;
+    background-color: black;
+    color: white;
+}
+  
+.tabset > label::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: 22px;
+    height: 4px;
+    background: white;
+}
+  
+.tabset > label:hover {
+    color: black;
+    background-color: #9fb2d1;
+}
+
+.tabset > label:hover::after,
+.tabset > label:checked::after,
+.tabset > label:checked::after{
+    background-color: black;
+}
+  
+.tabset > input:focus + label,
+.tabset > input:checked + label {
+    border-color: black;
+    border-bottom: none;
+    border-radius: 20px;
+    margin-bottom: -1px;
+    color: black;
+    background-color: #9fb2d1;
+}
+
+
