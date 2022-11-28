@@ -15,6 +15,40 @@
     line-height: 1.5;
 }
 
+.flextab{
+    display: flex;
+}
+
+
+.article_text{
+    padding: 10px 20px;
+    line-height: 1.5;
+    font-size: large;
+}
+
+.history_img img{
+    max-height: 50vh;
+}
+
+.history_img{
+    position: relative;
+    margin: auto;
+    padding: 7px;
+    background-color: #f8f9fa;
+    border: 1px solid  rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
+
+.history_img > *{
+    position: relative;
+    margin: auto;
+    display: block;
+}
+
+img ~ figcaption{
+    font-size: medium;
+    padding: 2px;
+}
 
 /*
  CSS for the main interaction
@@ -29,7 +63,9 @@
 .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
 .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
 .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
-.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6),
+.tabset > input:nth-child(13):checked ~ .tab-panels > .tab-panel:nth-child(7),
+.tabset > input:nth-child(15):checked ~ .tab-panels > .tab-panel:nth-child(8) {
     display: block;
 }
 
@@ -51,7 +87,7 @@ Styling
 
 .tab-panel {
     padding: 30px 0;
-    width: 90%;
+    width: 95%;
     margin: auto;
     line-height: 1.5;
 }
