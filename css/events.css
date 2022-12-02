@@ -30,7 +30,7 @@ section{
 .article_item:nth-of-type(odd){
     display: flex;
     align-items: flex-start;
-    padding: 40px 20px;
+    padding: 20px 20px;
 }
 
 .article_item:nth-of-type(even){
@@ -54,4 +54,12 @@ section{
     font-size: x-large;
     text-decoration: underline;
     margin: 10px 0px;
+}
+
+div#tiff, div#christmas{
+    flex-direction: row-reverse;
+}
+
+.category_heading{
+    text-align: center;
 }
