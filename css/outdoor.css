@@ -4,7 +4,6 @@
   padding-bottom:1cm;
   display:flex;
   justify-content: center;
-  
 }
 
 section{
@@ -34,23 +33,21 @@ section{
   font-size: large;
 }
 
-
-
-
-.category_heading{
-  text-align: center;
-}
-
 .article_heading{
+  text-align: center;
   font-size: x-large;
   text-decoration: underline;
   margin: 10px 0px;
 }
 
-.article_img
-{
+.article_img{
   padding: top 1cm;
   padding: right 1cm;
   padding: left 1cm;
   padding: bottom 1cm;
+}
+
+.article_intro{
+  padding: 10px 20px;
+  line-height: 1.5;
 }
