@@ -8,13 +8,13 @@ heading{
     margin: 1cm;
 }
 
-.article_item:nth-of-type(odd) {
+.article_container:nth-of-type(odd) .article_item {
     display: flex;
     align-items: flex-start;
     padding: 20px 20px;
 }
 
-.article_item:nth-of-type(even) {
+.article_container:nth-of-type(even) .article_item {
     display: flex;
     align-items: flex-start;
     flex-direction: row-reverse;
@@ -24,4 +24,12 @@ heading{
 .article_text{
     font-size: medium;
     line-height: 1.5;
+}
+
+.article_item img{
+    max-width: 50%;
+}
+
+.article_item > *{
+    margin: 10px;
 }
