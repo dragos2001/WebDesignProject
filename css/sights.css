@@ -1,0 +1,27 @@
+section {
+    position: relative;
+    top: 2cm;
+}
+
+heading{
+    text-align: center;
+    margin: 1cm;
+}
+
+.article_item:nth-of-type(odd) {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 20px;
+}
+
+.article_item:nth-of-type(even) {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    padding: 20px 20px;
+}
+
+.article_text{
+    font-size: medium;
+    line-height: 1.5;
+}

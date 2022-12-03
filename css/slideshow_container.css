@@ -44,7 +44,7 @@
   padding: 8px 12px;
   font-weight: bold;
   bottom: 3em;
-  width: 20%;
+  width: fit-content;
   position: relative;
   margin: 0 auto;
   background: rgba(111, 130, 166, 0.3);
